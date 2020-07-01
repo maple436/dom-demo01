@@ -90,7 +90,7 @@ window.dom = {
     node.removeEventListener(eventName, fn);
   },
   find(selector, scope) {
-    return (scope || selector).querySelectorAll(selector);
+    return (scope || document).querySelectorAll(selector);
   },
   parent(node) {
     return node.parentNode;
